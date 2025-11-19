@@ -1,7 +1,18 @@
-import React, { useRef, useId, useEffect } from 'react';
-import { animate, useMotionValue } from 'framer-motion';
+import React, { useRef, useId, useEffect, CSSProperties } from "react";
+import {
+  animate,
+  useMotionValue,
+  AnimationPlaybackControls,
+} from "framer-motion";
+import { EtherealShadowProps, AnimationConfig } from "../../types";
 
-function mapRange(value, fromLow, fromHigh, toLow, toHigh) {
+function mapRange(
+  value: number,
+  fromLow: number,
+  fromHigh: number,
+  toLow: number,
+  toHigh: number
+): number {
   if (fromLow === fromHigh) {
     return toLow;
   }
@@ -9,7 +20,7 @@ function mapRange(value, fromLow, fromHigh, toLow, toHigh) {
   return toLow + percentage * (toHigh - toLow);
 }
 
-const useInstanceId = () => {
+const useInstanceId = (): string => {
   const id = useId();
   const cleanId = id.replace(/:/g, "");
   const instanceId = `shadowoverlay-${cleanId}`;
@@ -17,21 +28,25 @@ const useInstanceId = () => {
 };
 
 export function EtherealShadow({
-  sizing = 'fill',
-  color = 'rgba(128, 128, 128, 1)',
+  sizing = "fill",
+  color = "rgba(128, 128, 128, 1)",
   animation,
   noise,
   style,
-  className
-}) {
+  className,
+}: EtherealShadowProps) {
   const id = useInstanceId();
   const animationEnabled = animation && animation.scale > 0;
-  const feColorMatrixRef = useRef(null);
+  const feColorMatrixRef = useRef<SVGFEColorMatrixElement>(null);
   const hueRotateMotionValue = useMotionValue(180);
-  const hueRotateAnimation = useRef(null);
+  const hueRotateAnimation = useRef<AnimationPlaybackControls | null>(null);
 
-  const displacementScale = animation ? mapRange(animation.scale, 1, 100, 20, 100) : 0;
-  const animationDuration = animation ? mapRange(animation.speed, 1, 100, 1000, 50) : 1;
+  const displacementScale = animation
+    ? mapRange(animation.scale, 1, 100, 20, 100)
+    : 0;
+  const animationDuration = animation
+    ? mapRange(animation.speed, 1, 100, 1000, 50)
+    : 1;
 
   useEffect(() => {
     if (feColorMatrixRef.current && animationEnabled) {
@@ -46,11 +61,11 @@ export function EtherealShadow({
         repeatDelay: 0,
         ease: "linear",
         delay: 0,
-        onUpdate: (value) => {
+        onUpdate: (value: number) => {
           if (feColorMatrixRef.current) {
             feColorMatrixRef.current.setAttribute("values", String(value));
           }
-        }
+        },
       });
 
       return () => {
@@ -70,14 +85,14 @@ export function EtherealShadow({
         inset: 0,
         width: "100%",
         height: "100%",
-        ...style
+        ...style,
       }}
     >
       <div
         style={{
           position: "absolute",
           inset: -displacementScale,
-          filter: animationEnabled ? `url(#${id}) blur(4px)` : "none"
+          filter: animationEnabled ? `url(#${id}) blur(4px)` : "none",
         }}
       >
         {animationEnabled && (
@@ -87,7 +102,13 @@ export function EtherealShadow({
                 <feTurbulence
                   result="undulation"
                   numOctaves="2"
-                  baseFrequency={`${mapRange(animation.scale, 0, 100, 0.001, 0.0005)},${mapRange(animation.scale, 0, 100, 0.004, 0.002)}`}
+                  baseFrequency={`${mapRange(
+                    animation.scale,
+                    0,
+                    100,
+                    0.001,
+                    0.0005
+                  )},${mapRange(animation.scale, 0, 100, 0.004, 0.002)}`}
                   seed="0"
                   type="turbulence"
                 />
@@ -127,7 +148,7 @@ export function EtherealShadow({
             maskRepeat: "no-repeat",
             maskPosition: "center",
             width: "100%",
-            height: "100%"
+            height: "100%",
           }}
         />
       </div>
@@ -141,7 +162,7 @@ export function EtherealShadow({
             backgroundSize: noise.scale * 200,
             backgroundRepeat: "repeat",
             opacity: noise.opacity / 2,
-            pointerEvents: "none"
+            pointerEvents: "none",
           }}
         />
       )}

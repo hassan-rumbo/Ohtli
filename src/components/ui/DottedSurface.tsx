@@ -1,19 +1,30 @@
-import React, { useEffect, useRef } from 'react';
-import * as THREE from 'three';
-import { useTheme } from '../../context/ThemeContext';
-import { cn } from '../../lib/utils';
+import React, { useEffect, useRef } from "react";
+import * as THREE from "three";
+import { useTheme } from "../../context/ThemeContext";
+import { cn } from "../../lib/utils";
+import { DottedSurfaceProps } from "../../types";
 
-export function DottedSurface({ className, ...props }) {
+interface SceneRef {
+  scene: THREE.Scene;
+  camera: THREE.PerspectiveCamera;
+  renderer: THREE.WebGLRenderer;
+  particles: THREE.Points[];
+  animationId: number;
+  count: number;
+}
+
+export function DottedSurface({ className, ...props }: DottedSurfaceProps) {
   const { theme } = useTheme();
-  const containerRef = useRef(null);
-  const sceneRef = useRef(null);
+  const containerRef = useRef<HTMLDivElement>(null);
+  const sceneRef = useRef<SceneRef | null>(null);
 
   useEffect(() => {
     if (!containerRef.current) return;
 
     // Check if WebGL is available (not in test environment)
-    const canvas = document.createElement('canvas');
-    const gl = canvas.getContext('webgl') || canvas.getContext('experimental-webgl');
+    const canvas = document.createElement("canvas");
+    const gl =
+      canvas.getContext("webgl") || canvas.getContext("experimental-webgl");
     if (!gl) {
       // WebGL not available (test environment), skip Three.js rendering
       return;
@@ -46,8 +57,8 @@ export function DottedSurface({ className, ...props }) {
     containerRef.current.appendChild(renderer.domElement);
 
     // Create particles
-    const positions = [];
-    const colors = [];
+    const positions: number[] = [];
+    const colors: number[] = [];
 
     // Create geometry for all particles
     const geometry = new THREE.BufferGeometry();
@@ -59,7 +70,7 @@ export function DottedSurface({ className, ...props }) {
         const z = iy * SEPARATION - (AMOUNTY * SEPARATION) / 2;
 
         positions.push(x, y, z);
-        if (theme === 'dark') {
+        if (theme === "dark") {
           colors.push(200, 200, 200);
         } else {
           colors.push(0, 0, 0);
@@ -68,17 +79,17 @@ export function DottedSurface({ className, ...props }) {
     }
 
     geometry.setAttribute(
-      'position',
+      "position",
       new THREE.Float32BufferAttribute(positions, 3)
     );
-    geometry.setAttribute('color', new THREE.Float32BufferAttribute(colors, 3));
+    geometry.setAttribute("color", new THREE.Float32BufferAttribute(colors, 3));
 
     // Create material with enhanced visibility
     const material = new THREE.PointsMaterial({
-      size: 12, // Increased from 8 for better visibility
+      size: 12,
       vertexColors: true,
       transparent: true,
-      opacity: 0.9, // Increased from 0.8
+      opacity: 0.9,
       sizeAttenuation: true,
     });
 
@@ -87,14 +98,14 @@ export function DottedSurface({ className, ...props }) {
     scene.add(points);
 
     let count = 0;
-    let animationId;
+    let animationId: number;
 
     // Animation function
     const animate = () => {
       animationId = requestAnimationFrame(animate);
 
       const positionAttribute = geometry.attributes.position;
-      const positions = positionAttribute.array;
+      const positions = positionAttribute.array as Float32Array;
 
       let i = 0;
       for (let ix = 0; ix < AMOUNTX; ix++) {
@@ -113,7 +124,7 @@ export function DottedSurface({ className, ...props }) {
 
       positionAttribute.needsUpdate = true;
       renderer.render(scene, camera);
-      count += 0.08; // Slightly slower for smoother wave motion
+      count += 0.08;
     };
 
     // Handle window resize
@@ -123,7 +134,7 @@ export function DottedSurface({ className, ...props }) {
       renderer.setSize(window.innerWidth, window.innerHeight);
     };
 
-    window.addEventListener('resize', handleResize);
+    window.addEventListener("resize", handleResize);
 
     // Start animation
     animate();
@@ -140,7 +151,7 @@ export function DottedSurface({ className, ...props }) {
 
     // Cleanup function
     return () => {
-      window.removeEventListener('resize', handleResize);
+      window.removeEventListener("resize", handleResize);
 
       if (sceneRef.current) {
         cancelAnimationFrame(sceneRef.current.animationId);
@@ -159,10 +170,10 @@ export function DottedSurface({ className, ...props }) {
 
         sceneRef.current.renderer.dispose();
 
-        if (containerRef.current && sceneRef.current.renderer.domElement) {
-          containerRef.current.removeChild(
-            sceneRef.current.renderer.domElement
-          );
+        const container = containerRef.current;
+        const domElement = sceneRef.current.renderer.domElement;
+        if (container && domElement && container.contains(domElement)) {
+          container.removeChild(domElement);
         }
       }
     };
@@ -171,7 +182,7 @@ export function DottedSurface({ className, ...props }) {
   return (
     <div
       ref={containerRef}
-      className={cn('pointer-events-none absolute inset-0 -z-1', className)}
+      className={cn("pointer-events-none absolute inset-0 -z-1", className)}
       {...props}
     />
   );
