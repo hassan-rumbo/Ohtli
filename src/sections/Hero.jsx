@@ -2,6 +2,7 @@ import React, { useRef } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import Button from '../components/Button';
 import { ArrowRight } from 'lucide-react';
+import { EtherealShadow } from '../components/ui/EtherealShadow';
 
 const Hero = () => {
   const containerRef = useRef(null);
@@ -15,29 +16,25 @@ const Hero = () => {
 
   return (
     <section ref={containerRef} id="home" className="relative min-h-screen flex flex-col justify-center items-center overflow-hidden bg-background pt-20">
-      {/* Abstract Background Elements */}
+      {/* Ethereal Shadow Background */}
+      <EtherealShadow
+        color="var(--color-primary)"
+        animation={{ scale: 100, speed: 70 }}
+        noise={{ opacity: 0.8, scale: 1.2 }}
+        sizing="fill"
+        className="opacity-20"
+      />
+      
+      {/* 3D Object Overlay */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <motion.div 
-          className="absolute top-1/4 right-10 w-[40vw] h-[40vw] opacity-80 mix-blend-screen"
+          className="absolute top-1/4 right-10 w-[40vw] h-[40vw] opacity-60 mix-blend-screen"
           initial={{ opacity: 0, scale: 0.8, rotate: -10 }}
-          animate={{ opacity: 0.8, scale: 1, rotate: 0 }}
+          animate={{ opacity: 0.6, scale: 1, rotate: 0 }}
           transition={{ duration: 2, ease: "easeOut" }}
         >
           <img src="/src/assets/hero-obj.png" alt="Abstract 3D Shape" className="w-full h-full object-contain dark:filter-none filter invert dark:invert-0 transition-all duration-500" />
         </motion.div>
-        
-        <motion.div 
-          className="absolute -bottom-20 -left-20 w-[600px] h-[600px] bg-primary/20 rounded-full blur-[120px]"
-          animate={{ 
-            scale: [1, 1.2, 1],
-            opacity: [0.3, 0.5, 0.3]
-          }}
-          transition={{ 
-            duration: 8,
-            repeat: Infinity,
-            ease: "easeInOut"
-          }}
-        />
       </div>
 
       <div className="container mx-auto px-6 relative z-10 text-center">

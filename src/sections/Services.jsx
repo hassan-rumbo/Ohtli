@@ -2,6 +2,7 @@ import React, { useRef } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { ArrowUpRight } from 'lucide-react';
 import { services } from '../data/services';
+import { DottedSurface } from '../components/ui/DottedSurface';
 
 const Services = () => {
   const targetRef = useRef(null);
@@ -14,7 +15,10 @@ const Services = () => {
   return (
     <section ref={targetRef} id="services" className="relative h-[300vh] bg-background">
       <div className="sticky top-0 flex h-screen items-center overflow-hidden">
-        <motion.div style={{ x }} className="flex gap-20 px-20">
+        {/* Dotted Surface Background */}
+        <DottedSurface className="opacity-30" />
+        
+        <motion.div style={{ x }} className="flex gap-20 px-20 relative z-10">
           <div className="container mx-auto px-6 mb-16 flex justify-between items-end min-w-[40vw]">
             <div>
               <h2 className="text-sm uppercase tracking-[0.3em] text-[var(--color-text-muted)] mb-4">

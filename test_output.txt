@@ -9150,3 +9150,374 @@ This ensures that you're testing the behavior the user would see in the browser.
 
  PASS  Waiting for file changes...
        press h to show help, press q to quit
+c[3J RERUN  src/sections/Hero.jsx 
+
+ ❯ src/sections/Services.test.jsx (8 tests | 1 failed) 21078ms
+   ✓ Services Component > renders the section heading  4389ms
+   ✓ Services Component > renders all services from data  994ms
+   ✓ Services Component > displays service IDs correctly  941ms
+   ✓ Services Component > renders tech stack tags for each service  1568ms
+   ✓ Services Component > has the 3D services image  1718ms
+   ✓ Services Component > applies correct hover states  1629ms
+   × Services Component > has no accessibility violations 9207ms
+     → Test timed out in 5000ms.
+If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".
+   ✓ Services Component > uses horizontal scroll animation  419ms
+ ❯ src/sections/Projects.test.jsx (7 tests | 1 failed) 20438ms
+   ✓ Projects Component > renders the section heading  4279ms
+   ✓ Projects Component > renders all projects from data  701ms
+   ✓ Projects Component > displays project images correctly  787ms
+   ✓ Projects Component > applies correct grid layout classes based on project size  1353ms
+   ✓ Projects Component > has hover effects on project cards  1488ms
+   × Projects Component > has no accessibility violations 11748ms
+     → Test timed out in 5000ms.
+If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".
+   ✓ Projects Component > renders visual decoration (primary line) 55ms
+ ❯ src/sections/Contact.test.jsx (10 tests | 1 failed) 15292ms
+   ✓ Contact Component > renders the heading  1819ms
+   ✓ Contact Component > displays the email link 188ms
+   ✓ Contact Component > renders all form fields with proper labels 31ms
+   × Contact Component > allows typing in form fields 6426ms
+     → Test timed out in 5000ms.
+If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".
+   ✓ Contact Component > has a submit button  1445ms
+   ✓ Contact Component > displays social media links 253ms
+   ✓ Contact Component > displays location information 63ms
+   ✓ Contact Component > has proper input types  779ms
+   ✓ Contact Component > has no accessibility violations  4022ms
+   ✓ Contact Component > displays copyright information 265ms
+ ❯ src/sections/About.test.jsx (10 tests | 1 failed) 13166ms
+   ✓ About Component > renders the section heading  4335ms
+   ✓ About Component > displays the philosophy text 39ms
+   ✓ About Component > renders all three pillars  607ms
+   ✓ About Component > displays pillar descriptions 253ms
+   ✓ About Component > has numbered pillars (01, 02, 03)  559ms
+   ✓ About Component > has the 3D philosophy image  753ms
+   ✓ About Component > applies light mode filter to image  635ms
+   ✓ About Component > has proper grid layout 47ms
+   × About Component > has no accessibility violations 5826ms
+     → Test timed out in 5000ms.
+If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".
+   ✓ About Component > applies hover effects to pillar cards 53ms
+ ❯ src/sections/Process.test.jsx (9 tests | 1 failed) 17446ms
+   ✓ Process Component > renders the section heading  1918ms
+   ✓ Process Component > renders all four process steps  1015ms
+   ✓ Process Component > displays step descriptions  805ms
+   ✓ Process Component > has numbered steps (01-04)  310ms
+   ✓ Process Component > has proper z-index for background numbers 197ms
+   ✓ Process Component > applies backdrop blur to prevent overlaps  1643ms
+   ✓ Process Component > has alternating layout for visual interest  372ms
+   × Process Component > has no accessibility violations 11100ms
+     → Test timed out in 5000ms.
+If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".
+   ✓ Process Component > applies hover effects 43ms
+ ❯ src/components/Footer.test.jsx (8 tests | 1 failed) 9275ms
+   ✓ Footer Component > renders the Ohtli logo  1102ms
+   ✓ Footer Component > displays all navigation links  433ms
+   ✓ Footer Component > has correct href attributes for navigation  1060ms
+   ✓ Footer Component > displays copyright information 205ms
+   ✓ Footer Component > has proper semantic structure 4ms
+   ✓ Footer Component > applies correct styling with black background 262ms
+   ✓ Footer Component > has uppercase tracking for links 203ms
+   × Footer Component > has no accessibility violations 5839ms
+     → Test timed out in 5000ms.
+If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".
+ ✓ src/App.test.jsx (3 tests) 4246ms
+   ✓ Ohtli Landing Page > renders the App without crashing  2152ms
+   ✓ Ohtli Landing Page > renders the Navbar with correct links  1108ms
+   ✓ Ohtli Landing Page > renders the Hero section with main slogan  953ms
+ ✓ src/sections/Hero.test.jsx (8 tests) 14765ms
+   ✓ Hero Component > renders the main heading correctly  2482ms
+   ✓ Hero Component > displays the tagline  928ms
+   ✓ Hero Component > renders the CTA button  603ms
+   ✓ Hero Component > has the 3D hero image  335ms
+   ✓ Hero Component > applies light mode filter to image  392ms
+   ✓ Hero Component > has proper heading hierarchy  4427ms
+   ✓ Hero Component > has no accessibility violations  4448ms
+   ✓ Hero Component > renders scroll indicator  1045ms
+
+ Test Files  6 failed | 2 passed (8)
+      Tests  6 failed | 57 passed (63)
+   Start at  13:06:23
+   Duration  45.92s
+
+ PASS  Waiting for file changes...
+       press h to show help, press q to quit
+c[3J RERUN  src/sections/Hero.jsx 
+
+ ❯ src/sections/Services.test.jsx (8 tests | 1 failed) 21078ms
+   ✓ Services Component > renders the section heading  4389ms
+   ✓ Services Component > renders all services from data  994ms
+   ✓ Services Component > displays service IDs correctly  941ms
+   ✓ Services Component > renders tech stack tags for each service  1568ms
+   ✓ Services Component > has the 3D services image  1718ms
+   ✓ Services Component > applies correct hover states  1629ms
+   × Services Component > has no accessibility violations 9207ms
+     → Test timed out in 5000ms.
+If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".
+   ✓ Services Component > uses horizontal scroll animation  419ms
+ ❯ src/sections/Projects.test.jsx (7 tests | 1 failed) 20438ms
+   ✓ Projects Component > renders the section heading  4279ms
+   ✓ Projects Component > renders all projects from data  701ms
+   ✓ Projects Component > displays project images correctly  787ms
+   ✓ Projects Component > applies correct grid layout classes based on project size  1353ms
+   ✓ Projects Component > has hover effects on project cards  1488ms
+   × Projects Component > has no accessibility violations 11748ms
+     → Test timed out in 5000ms.
+If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".
+   ✓ Projects Component > renders visual decoration (primary line) 55ms
+ ❯ src/sections/Contact.test.jsx (10 tests | 1 failed) 15292ms
+   ✓ Contact Component > renders the heading  1819ms
+   ✓ Contact Component > displays the email link 188ms
+   ✓ Contact Component > renders all form fields with proper labels 31ms
+   × Contact Component > allows typing in form fields 6426ms
+     → Test timed out in 5000ms.
+If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".
+   ✓ Contact Component > has a submit button  1445ms
+   ✓ Contact Component > displays social media links 253ms
+   ✓ Contact Component > displays location information 63ms
+   ✓ Contact Component > has proper input types  779ms
+   ✓ Contact Component > has no accessibility violations  4022ms
+   ✓ Contact Component > displays copyright information 265ms
+ ❯ src/sections/About.test.jsx (10 tests | 1 failed) 13166ms
+   ✓ About Component > renders the section heading  4335ms
+   ✓ About Component > displays the philosophy text 39ms
+   ✓ About Component > renders all three pillars  607ms
+   ✓ About Component > displays pillar descriptions 253ms
+   ✓ About Component > has numbered pillars (01, 02, 03)  559ms
+   ✓ About Component > has the 3D philosophy image  753ms
+   ✓ About Component > applies light mode filter to image  635ms
+   ✓ About Component > has proper grid layout 47ms
+   × About Component > has no accessibility violations 5826ms
+     → Test timed out in 5000ms.
+If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".
+   ✓ About Component > applies hover effects to pillar cards 53ms
+ ❯ src/sections/Process.test.jsx (9 tests | 1 failed) 17446ms
+   ✓ Process Component > renders the section heading  1918ms
+   ✓ Process Component > renders all four process steps  1015ms
+   ✓ Process Component > displays step descriptions  805ms
+   ✓ Process Component > has numbered steps (01-04)  310ms
+   ✓ Process Component > has proper z-index for background numbers 197ms
+   ✓ Process Component > applies backdrop blur to prevent overlaps  1643ms
+   ✓ Process Component > has alternating layout for visual interest  372ms
+   × Process Component > has no accessibility violations 11100ms
+     → Test timed out in 5000ms.
+If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".
+   ✓ Process Component > applies hover effects 43ms
+ ❯ src/components/Footer.test.jsx (8 tests | 1 failed) 9275ms
+   ✓ Footer Component > renders the Ohtli logo  1102ms
+   ✓ Footer Component > displays all navigation links  433ms
+   ✓ Footer Component > has correct href attributes for navigation  1060ms
+   ✓ Footer Component > displays copyright information 205ms
+   ✓ Footer Component > has proper semantic structure 4ms
+   ✓ Footer Component > applies correct styling with black background 262ms
+   ✓ Footer Component > has uppercase tracking for links 203ms
+   × Footer Component > has no accessibility violations 5839ms
+     → Test timed out in 5000ms.
+If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".
+ ✓ src/App.test.jsx (3 tests) 2650ms
+   ✓ Ohtli Landing Page > renders the App without crashing  2101ms
+   ✓ Ohtli Landing Page > renders the Hero section with main slogan  336ms
+ ✓ src/sections/Hero.test.jsx (8 tests) 7101ms
+   ✓ Hero Component > renders the main heading correctly  1151ms
+   ✓ Hero Component > displays the tagline  785ms
+   ✓ Hero Component > renders the CTA button  654ms
+   ✓ Hero Component > has proper heading hierarchy  1721ms
+   ✓ Hero Component > has no accessibility violations  2431ms
+
+ Test Files  6 failed | 2 passed (8)
+      Tests  6 failed | 57 passed (63)
+   Start at  13:07:03
+   Duration  41.29s
+
+ PASS  Waiting for file changes...
+       press h to show help, press q to quit
+c[3J RERUN  src/sections/Services.jsx 
+
+ ❯ src/sections/Projects.test.jsx (7 tests | 1 failed) 20438ms
+   ✓ Projects Component > renders the section heading  4279ms
+   ✓ Projects Component > renders all projects from data  701ms
+   ✓ Projects Component > displays project images correctly  787ms
+   ✓ Projects Component > applies correct grid layout classes based on project size  1353ms
+   ✓ Projects Component > has hover effects on project cards  1488ms
+   × Projects Component > has no accessibility violations 11748ms
+     → Test timed out in 5000ms.
+If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".
+   ✓ Projects Component > renders visual decoration (primary line) 55ms
+ ❯ src/sections/Contact.test.jsx (10 tests | 1 failed) 15292ms
+   ✓ Contact Component > renders the heading  1819ms
+   ✓ Contact Component > displays the email link 188ms
+   ✓ Contact Component > renders all form fields with proper labels 31ms
+   × Contact Component > allows typing in form fields 6426ms
+     → Test timed out in 5000ms.
+If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".
+   ✓ Contact Component > has a submit button  1445ms
+   ✓ Contact Component > displays social media links 253ms
+   ✓ Contact Component > displays location information 63ms
+   ✓ Contact Component > has proper input types  779ms
+   ✓ Contact Component > has no accessibility violations  4022ms
+   ✓ Contact Component > displays copyright information 265ms
+ ❯ src/sections/About.test.jsx (10 tests | 1 failed) 13166ms
+   ✓ About Component > renders the section heading  4335ms
+   ✓ About Component > displays the philosophy text 39ms
+   ✓ About Component > renders all three pillars  607ms
+   ✓ About Component > displays pillar descriptions 253ms
+   ✓ About Component > has numbered pillars (01, 02, 03)  559ms
+   ✓ About Component > has the 3D philosophy image  753ms
+   ✓ About Component > applies light mode filter to image  635ms
+   ✓ About Component > has proper grid layout 47ms
+   × About Component > has no accessibility violations 5826ms
+     → Test timed out in 5000ms.
+If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".
+   ✓ About Component > applies hover effects to pillar cards 53ms
+ ❯ src/sections/Process.test.jsx (9 tests | 1 failed) 17446ms
+   ✓ Process Component > renders the section heading  1918ms
+   ✓ Process Component > renders all four process steps  1015ms
+   ✓ Process Component > displays step descriptions  805ms
+   ✓ Process Component > has numbered steps (01-04)  310ms
+   ✓ Process Component > has proper z-index for background numbers 197ms
+   ✓ Process Component > applies backdrop blur to prevent overlaps  1643ms
+   ✓ Process Component > has alternating layout for visual interest  372ms
+   × Process Component > has no accessibility violations 11100ms
+     → Test timed out in 5000ms.
+If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".
+   ✓ Process Component > applies hover effects 43ms
+ ❯ src/components/Footer.test.jsx (8 tests | 1 failed) 9275ms
+   ✓ Footer Component > renders the Ohtli logo  1102ms
+   ✓ Footer Component > displays all navigation links  433ms
+   ✓ Footer Component > has correct href attributes for navigation  1060ms
+   ✓ Footer Component > displays copyright information 205ms
+   ✓ Footer Component > has proper semantic structure 4ms
+   ✓ Footer Component > applies correct styling with black background 262ms
+   ✓ Footer Component > has uppercase tracking for links 203ms
+   × Footer Component > has no accessibility violations 5839ms
+     → Test timed out in 5000ms.
+If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".
+ ✓ src/App.test.jsx (3 tests) 2104ms
+   ✓ Ohtli Landing Page > renders the App without crashing  1617ms
+   ✓ Ohtli Landing Page > renders the Navbar with correct links  314ms
+
+⎯⎯⎯⎯⎯⎯ Failed Suites 1 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  src/sections/Services.test.jsx [ src/sections/Services.test.jsx ]
+Error: Failed to resolve import "three" from "src/components/ui/DottedSurface.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: /Users/Hassan/.gemini/antigravity/scratch/teotl-landing/src/components/ui/DottedSurface.jsx:2:23
+  1  |  import { jsxDEV } from "react/jsx-dev-runtime";
+  2  |  import React, { useEffect, useRef } from "react";
+  3  |  import * as THREE from "three";
+     |                          ^
+  4  |  import { useTheme } from "../context/ThemeContext";
+  5  |  import { cn } from "../../lib/utils";
+ ❯ TransformPluginContext._formatLog node_modules/vite/dist/node/chunks/config.js:29618:43
+ ❯ TransformPluginContext.error node_modules/vite/dist/node/chunks/config.js:29615:14
+ ❯ normalizeUrl node_modules/vite/dist/node/chunks/config.js:27738:18
+ ❯ node_modules/vite/dist/node/chunks/config.js:27796:32
+ ❯ TransformPluginContext.transform node_modules/vite/dist/node/chunks/config.js:27764:4
+ ❯ EnvironmentPluginContainer.transform node_modules/vite/dist/node/chunks/config.js:29416:14
+ ❯ loadAndTransform node_modules/vite/dist/node/chunks/config.js:23287:26
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+
+ Test Files  6 failed | 1 passed (7)
+      Tests  5 failed | 42 passed (47)
+   Start at  13:08:18
+   Duration  8.84s
+
+ FAIL  Tests failed. Watching for file changes...
+       press h to show help, press q to quit
+c[3J RERUN  src/sections/Services.jsx 
+
+ ❯ src/sections/Projects.test.jsx (7 tests | 1 failed) 20438ms
+   ✓ Projects Component > renders the section heading  4279ms
+   ✓ Projects Component > renders all projects from data  701ms
+   ✓ Projects Component > displays project images correctly  787ms
+   ✓ Projects Component > applies correct grid layout classes based on project size  1353ms
+   ✓ Projects Component > has hover effects on project cards  1488ms
+   × Projects Component > has no accessibility violations 11748ms
+     → Test timed out in 5000ms.
+If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".
+   ✓ Projects Component > renders visual decoration (primary line) 55ms
+ ❯ src/sections/Contact.test.jsx (10 tests | 1 failed) 15292ms
+   ✓ Contact Component > renders the heading  1819ms
+   ✓ Contact Component > displays the email link 188ms
+   ✓ Contact Component > renders all form fields with proper labels 31ms
+   × Contact Component > allows typing in form fields 6426ms
+     → Test timed out in 5000ms.
+If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".
+   ✓ Contact Component > has a submit button  1445ms
+   ✓ Contact Component > displays social media links 253ms
+   ✓ Contact Component > displays location information 63ms
+   ✓ Contact Component > has proper input types  779ms
+   ✓ Contact Component > has no accessibility violations  4022ms
+   ✓ Contact Component > displays copyright information 265ms
+ ❯ src/sections/About.test.jsx (10 tests | 1 failed) 13166ms
+   ✓ About Component > renders the section heading  4335ms
+   ✓ About Component > displays the philosophy text 39ms
+   ✓ About Component > renders all three pillars  607ms
+   ✓ About Component > displays pillar descriptions 253ms
+   ✓ About Component > has numbered pillars (01, 02, 03)  559ms
+   ✓ About Component > has the 3D philosophy image  753ms
+   ✓ About Component > applies light mode filter to image  635ms
+   ✓ About Component > has proper grid layout 47ms
+   × About Component > has no accessibility violations 5826ms
+     → Test timed out in 5000ms.
+If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".
+   ✓ About Component > applies hover effects to pillar cards 53ms
+ ❯ src/sections/Process.test.jsx (9 tests | 1 failed) 17446ms
+   ✓ Process Component > renders the section heading  1918ms
+   ✓ Process Component > renders all four process steps  1015ms
+   ✓ Process Component > displays step descriptions  805ms
+   ✓ Process Component > has numbered steps (01-04)  310ms
+   ✓ Process Component > has proper z-index for background numbers 197ms
+   ✓ Process Component > applies backdrop blur to prevent overlaps  1643ms
+   ✓ Process Component > has alternating layout for visual interest  372ms
+   × Process Component > has no accessibility violations 11100ms
+     → Test timed out in 5000ms.
+If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".
+   ✓ Process Component > applies hover effects 43ms
+ ❯ src/components/Footer.test.jsx (8 tests | 1 failed) 9275ms
+   ✓ Footer Component > renders the Ohtli logo  1102ms
+   ✓ Footer Component > displays all navigation links  433ms
+   ✓ Footer Component > has correct href attributes for navigation  1060ms
+   ✓ Footer Component > displays copyright information 205ms
+   ✓ Footer Component > has proper semantic structure 4ms
+   ✓ Footer Component > applies correct styling with black background 262ms
+   ✓ Footer Component > has uppercase tracking for links 203ms
+   × Footer Component > has no accessibility violations 5839ms
+     → Test timed out in 5000ms.
+If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".
+ ✓ src/App.test.jsx (3 tests) 1569ms
+   ✓ Ohtli Landing Page > renders the App without crashing  1165ms
+
+⎯⎯⎯⎯⎯⎯ Failed Suites 1 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  src/sections/Services.test.jsx [ src/sections/Services.test.jsx ]
+Error: Failed to resolve import "three" from "src/components/ui/DottedSurface.jsx". Does the file exist?
+  Plugin: vite:import-analysis
+  File: /Users/Hassan/.gemini/antigravity/scratch/teotl-landing/src/components/ui/DottedSurface.jsx:2:23
+  1  |  import { jsxDEV } from "react/jsx-dev-runtime";
+  2  |  import React, { useEffect, useRef } from "react";
+  3  |  import * as THREE from "three";
+     |                          ^
+  4  |  import { useTheme } from "../context/ThemeContext";
+  5  |  import { cn } from "../../lib/utils";
+ ❯ TransformPluginContext._formatLog node_modules/vite/dist/node/chunks/config.js:29618:43
+ ❯ TransformPluginContext.error node_modules/vite/dist/node/chunks/config.js:29615:14
+ ❯ normalizeUrl node_modules/vite/dist/node/chunks/config.js:27738:18
+ ❯ node_modules/vite/dist/node/chunks/config.js:27796:32
+ ❯ TransformPluginContext.transform node_modules/vite/dist/node/chunks/config.js:27764:4
+ ❯ EnvironmentPluginContainer.transform node_modules/vite/dist/node/chunks/config.js:29416:14
+ ❯ loadAndTransform node_modules/vite/dist/node/chunks/config.js:23287:26
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+
+ Test Files  6 failed | 1 passed (7)
+      Tests  5 failed | 42 passed (47)
+   Start at  13:08:38
+   Duration  14.36s
+
+ FAIL  Tests failed. Watching for file changes...
+       press h to show help, press q to quit
