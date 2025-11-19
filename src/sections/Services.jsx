@@ -16,7 +16,7 @@ const Services = () => {
     <section ref={targetRef} id="services" className="relative h-[300vh] bg-background">
       <div className="sticky top-0 flex h-screen items-center overflow-hidden">
         {/* Dotted Surface Background */}
-        <DottedSurface className="opacity-30" />
+        <DottedSurface className="opacity-50" />
         
         <motion.div style={{ x }} className="flex gap-20 px-20 relative z-10">
           <div className="container mx-auto px-6 mb-16 flex justify-between items-end min-w-[40vw]">

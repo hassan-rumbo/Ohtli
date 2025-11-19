@@ -9640,3 +9640,713 @@ TypeError: Cannot destructure property 'theme' of '(0 , useTheme)(...)' as it is
 
  FAIL  Tests failed. Watching for file changes...
        press h to show help, press q to quit
+c[3J RERUN  src/sections/Services.test.jsx x8 
+
+ ❯ src/sections/Projects.test.jsx (7 tests | 1 failed) 20438ms
+   ✓ Projects Component > renders the section heading  4279ms
+   ✓ Projects Component > renders all projects from data  701ms
+   ✓ Projects Component > displays project images correctly  787ms
+   ✓ Projects Component > applies correct grid layout classes based on project size  1353ms
+   ✓ Projects Component > has hover effects on project cards  1488ms
+   × Projects Component > has no accessibility violations 11748ms
+     → Test timed out in 5000ms.
+If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".
+   ✓ Projects Component > renders visual decoration (primary line) 55ms
+ ❯ src/sections/Contact.test.jsx (10 tests | 1 failed) 15292ms
+   ✓ Contact Component > renders the heading  1819ms
+   ✓ Contact Component > displays the email link 188ms
+   ✓ Contact Component > renders all form fields with proper labels 31ms
+   × Contact Component > allows typing in form fields 6426ms
+     → Test timed out in 5000ms.
+If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".
+   ✓ Contact Component > has a submit button  1445ms
+   ✓ Contact Component > displays social media links 253ms
+   ✓ Contact Component > displays location information 63ms
+   ✓ Contact Component > has proper input types  779ms
+   ✓ Contact Component > has no accessibility violations  4022ms
+   ✓ Contact Component > displays copyright information 265ms
+ ❯ src/sections/About.test.jsx (10 tests | 1 failed) 13166ms
+   ✓ About Component > renders the section heading  4335ms
+   ✓ About Component > displays the philosophy text 39ms
+   ✓ About Component > renders all three pillars  607ms
+   ✓ About Component > displays pillar descriptions 253ms
+   ✓ About Component > has numbered pillars (01, 02, 03)  559ms
+   ✓ About Component > has the 3D philosophy image  753ms
+   ✓ About Component > applies light mode filter to image  635ms
+   ✓ About Component > has proper grid layout 47ms
+   × About Component > has no accessibility violations 5826ms
+     → Test timed out in 5000ms.
+If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".
+   ✓ About Component > applies hover effects to pillar cards 53ms
+ ❯ src/sections/Process.test.jsx (9 tests | 1 failed) 17446ms
+   ✓ Process Component > renders the section heading  1918ms
+   ✓ Process Component > renders all four process steps  1015ms
+   ✓ Process Component > displays step descriptions  805ms
+   ✓ Process Component > has numbered steps (01-04)  310ms
+   ✓ Process Component > has proper z-index for background numbers 197ms
+   ✓ Process Component > applies backdrop blur to prevent overlaps  1643ms
+   ✓ Process Component > has alternating layout for visual interest  372ms
+   × Process Component > has no accessibility violations 11100ms
+     → Test timed out in 5000ms.
+If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".
+   ✓ Process Component > applies hover effects 43ms
+ ❯ src/components/Footer.test.jsx (8 tests | 1 failed) 9275ms
+   ✓ Footer Component > renders the Ohtli logo  1102ms
+   ✓ Footer Component > displays all navigation links  433ms
+   ✓ Footer Component > has correct href attributes for navigation  1060ms
+   ✓ Footer Component > displays copyright information 205ms
+   ✓ Footer Component > has proper semantic structure 4ms
+   ✓ Footer Component > applies correct styling with black background 262ms
+   ✓ Footer Component > has uppercase tracking for links 203ms
+   × Footer Component > has no accessibility violations 5839ms
+     → Test timed out in 5000ms.
+If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".
+stderr | src/sections/Services.test.jsx > Services Component > renders the section heading
+Not implemented: HTMLCanvasElement's getContext() method: without installing the canvas npm package
+Not implemented: HTMLCanvasElement's getContext() method: without installing the canvas npm package
+THREE.WebGLRenderer: Error creating WebGL context.
+
+stderr | src/sections/Services.test.jsx > Services Component > renders all services from data
+Not implemented: HTMLCanvasElement's getContext() method: without installing the canvas npm package
+Not implemented: HTMLCanvasElement's getContext() method: without installing the canvas npm package
+THREE.WebGLRenderer: Error creating WebGL context.
+
+stderr | src/sections/Services.test.jsx > Services Component > displays service IDs correctly
+Not implemented: HTMLCanvasElement's getContext() method: without installing the canvas npm package
+Not implemented: HTMLCanvasElement's getContext() method: without installing the canvas npm package
+THREE.WebGLRenderer: Error creating WebGL context.
+
+stderr | src/sections/Services.test.jsx > Services Component > renders tech stack tags for each service
+Not implemented: HTMLCanvasElement's getContext() method: without installing the canvas npm package
+Not implemented: HTMLCanvasElement's getContext() method: without installing the canvas npm package
+THREE.WebGLRenderer: Error creating WebGL context.
+
+stderr | src/sections/Services.test.jsx > Services Component > has the 3D services image
+Not implemented: HTMLCanvasElement's getContext() method: without installing the canvas npm package
+Not implemented: HTMLCanvasElement's getContext() method: without installing the canvas npm package
+THREE.WebGLRenderer: Error creating WebGL context.
+
+stderr | src/sections/Services.test.jsx > Services Component > applies correct hover states
+Not implemented: HTMLCanvasElement's getContext() method: without installing the canvas npm package
+Not implemented: HTMLCanvasElement's getContext() method: without installing the canvas npm package
+THREE.WebGLRenderer: Error creating WebGL context.
+
+stderr | src/sections/Services.test.jsx > Services Component > has no accessibility violations
+Not implemented: HTMLCanvasElement's getContext() method: without installing the canvas npm package
+Not implemented: HTMLCanvasElement's getContext() method: without installing the canvas npm package
+THREE.WebGLRenderer: Error creating WebGL context.
+
+stderr | src/sections/Services.test.jsx > Services Component > uses horizontal scroll animation
+Not implemented: HTMLCanvasElement's getContext() method: without installing the canvas npm package
+Not implemented: HTMLCanvasElement's getContext() method: without installing the canvas npm package
+THREE.WebGLRenderer: Error creating WebGL context.
+
+ ❯ src/sections/Services.test.jsx (8 tests | 8 failed) 1214ms
+   × Services Component > renders the section heading 277ms
+     → Error creating WebGL context.
+   × Services Component > renders all services from data 245ms
+     → Error creating WebGL context.
+   × Services Component > displays service IDs correctly 51ms
+     → Error creating WebGL context.
+   × Services Component > renders tech stack tags for each service 44ms
+     → Error creating WebGL context.
+   × Services Component > has the 3D services image 160ms
+     → Error creating WebGL context.
+   × Services Component > applies correct hover states 114ms
+     → Error creating WebGL context.
+   × Services Component > has no accessibility violations 270ms
+     → Error creating WebGL context.
+   × Services Component > uses horizontal scroll animation 46ms
+     → Error creating WebGL context.
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 8 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  src/sections/Services.test.jsx > Services Component > renders the section heading
+ FAIL  src/sections/Services.test.jsx > Services Component > renders all services from data
+ FAIL  src/sections/Services.test.jsx > Services Component > displays service IDs correctly
+ FAIL  src/sections/Services.test.jsx > Services Component > renders tech stack tags for each service
+ FAIL  src/sections/Services.test.jsx > Services Component > has the 3D services image
+ FAIL  src/sections/Services.test.jsx > Services Component > applies correct hover states
+ FAIL  src/sections/Services.test.jsx > Services Component > has no accessibility violations
+ FAIL  src/sections/Services.test.jsx > Services Component > uses horizontal scroll animation
+Error: Error creating WebGL context.
+ ❯ new WebGLRenderer node_modules/three/build/three.module.js:29123:13
+    29121|      } else {
+    29122| 
+    29123|       throw new Error( 'Error creating WebGL context.' );
+       |             ^
+    29124| 
+    29125|      }
+ ❯ src/components/ui/DottedSurface.jsx:30:22
+ ❯ Object.react_stack_bottom_frame node_modules/react-dom/cjs/react-dom-client.development.js:25989:20
+ ❯ runWithFiberInDEV node_modules/react-dom/cjs/react-dom-client.development.js:874:13
+ ❯ commitHookEffectListMount node_modules/react-dom/cjs/react-dom-client.development.js:13249:29
+ ❯ commitHookPassiveMountEffects node_modules/react-dom/cjs/react-dom-client.development.js:13336:11
+ ❯ commitPassiveMountOnFiber node_modules/react-dom/cjs/react-dom-client.development.js:15484:13
+ ❯ recursivelyTraversePassiveMountEffects node_modules/react-dom/cjs/react-dom-client.development.js:15439:11
+ ❯ commitPassiveMountOnFiber node_modules/react-dom/cjs/react-dom-client.development.js:15718:11
+ ❯ recursivelyTraversePassiveMountEffects node_modules/react-dom/cjs/react-dom-client.development.js:15439:11
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/8]⎯
+
+
+ Test Files  6 failed (6)
+      Tests  13 failed | 39 passed (52)
+   Start at  13:10:47
+   Duration  2.98s
+
+ FAIL  Tests failed. Watching for file changes...
+       press h to show help, press q to quit
+c[3J RERUN  src/sections/Services.test.jsx x9 
+
+ ❯ src/sections/Projects.test.jsx (7 tests | 1 failed) 20438ms
+   ✓ Projects Component > renders the section heading  4279ms
+   ✓ Projects Component > renders all projects from data  701ms
+   ✓ Projects Component > displays project images correctly  787ms
+   ✓ Projects Component > applies correct grid layout classes based on project size  1353ms
+   ✓ Projects Component > has hover effects on project cards  1488ms
+   × Projects Component > has no accessibility violations 11748ms
+     → Test timed out in 5000ms.
+If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".
+   ✓ Projects Component > renders visual decoration (primary line) 55ms
+ ❯ src/sections/Contact.test.jsx (10 tests | 1 failed) 15292ms
+   ✓ Contact Component > renders the heading  1819ms
+   ✓ Contact Component > displays the email link 188ms
+   ✓ Contact Component > renders all form fields with proper labels 31ms
+   × Contact Component > allows typing in form fields 6426ms
+     → Test timed out in 5000ms.
+If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".
+   ✓ Contact Component > has a submit button  1445ms
+   ✓ Contact Component > displays social media links 253ms
+   ✓ Contact Component > displays location information 63ms
+   ✓ Contact Component > has proper input types  779ms
+   ✓ Contact Component > has no accessibility violations  4022ms
+   ✓ Contact Component > displays copyright information 265ms
+ ❯ src/sections/About.test.jsx (10 tests | 1 failed) 13166ms
+   ✓ About Component > renders the section heading  4335ms
+   ✓ About Component > displays the philosophy text 39ms
+   ✓ About Component > renders all three pillars  607ms
+   ✓ About Component > displays pillar descriptions 253ms
+   ✓ About Component > has numbered pillars (01, 02, 03)  559ms
+   ✓ About Component > has the 3D philosophy image  753ms
+   ✓ About Component > applies light mode filter to image  635ms
+   ✓ About Component > has proper grid layout 47ms
+   × About Component > has no accessibility violations 5826ms
+     → Test timed out in 5000ms.
+If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".
+   ✓ About Component > applies hover effects to pillar cards 53ms
+ ❯ src/sections/Process.test.jsx (9 tests | 1 failed) 17446ms
+   ✓ Process Component > renders the section heading  1918ms
+   ✓ Process Component > renders all four process steps  1015ms
+   ✓ Process Component > displays step descriptions  805ms
+   ✓ Process Component > has numbered steps (01-04)  310ms
+   ✓ Process Component > has proper z-index for background numbers 197ms
+   ✓ Process Component > applies backdrop blur to prevent overlaps  1643ms
+   ✓ Process Component > has alternating layout for visual interest  372ms
+   × Process Component > has no accessibility violations 11100ms
+     → Test timed out in 5000ms.
+If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".
+   ✓ Process Component > applies hover effects 43ms
+ ❯ src/components/Footer.test.jsx (8 tests | 1 failed) 9275ms
+   ✓ Footer Component > renders the Ohtli logo  1102ms
+   ✓ Footer Component > displays all navigation links  433ms
+   ✓ Footer Component > has correct href attributes for navigation  1060ms
+   ✓ Footer Component > displays copyright information 205ms
+   ✓ Footer Component > has proper semantic structure 4ms
+   ✓ Footer Component > applies correct styling with black background 262ms
+   ✓ Footer Component > has uppercase tracking for links 203ms
+   × Footer Component > has no accessibility violations 5839ms
+     → Test timed out in 5000ms.
+If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".
+stderr | src/sections/Services.test.jsx > Services Component > renders the section heading
+Not implemented: HTMLCanvasElement's getContext() method: without installing the canvas npm package
+Not implemented: HTMLCanvasElement's getContext() method: without installing the canvas npm package
+THREE.WebGLRenderer: Error creating WebGL context.
+
+stderr | src/sections/Services.test.jsx > Services Component > renders all services from data
+Not implemented: HTMLCanvasElement's getContext() method: without installing the canvas npm package
+Not implemented: HTMLCanvasElement's getContext() method: without installing the canvas npm package
+THREE.WebGLRenderer: Error creating WebGL context.
+
+stderr | src/sections/Services.test.jsx > Services Component > displays service IDs correctly
+Not implemented: HTMLCanvasElement's getContext() method: without installing the canvas npm package
+Not implemented: HTMLCanvasElement's getContext() method: without installing the canvas npm package
+THREE.WebGLRenderer: Error creating WebGL context.
+
+stderr | src/sections/Services.test.jsx > Services Component > renders tech stack tags for each service
+Not implemented: HTMLCanvasElement's getContext() method: without installing the canvas npm package
+Not implemented: HTMLCanvasElement's getContext() method: without installing the canvas npm package
+THREE.WebGLRenderer: Error creating WebGL context.
+
+stderr | src/sections/Services.test.jsx > Services Component > has the 3D services image
+Not implemented: HTMLCanvasElement's getContext() method: without installing the canvas npm package
+Not implemented: HTMLCanvasElement's getContext() method: without installing the canvas npm package
+THREE.WebGLRenderer: Error creating WebGL context.
+
+stderr | src/sections/Services.test.jsx > Services Component > applies correct hover states
+Not implemented: HTMLCanvasElement's getContext() method: without installing the canvas npm package
+Not implemented: HTMLCanvasElement's getContext() method: without installing the canvas npm package
+THREE.WebGLRenderer: Error creating WebGL context.
+
+stderr | src/sections/Services.test.jsx > Services Component > has no accessibility violations
+Not implemented: HTMLCanvasElement's getContext() method: without installing the canvas npm package
+Not implemented: HTMLCanvasElement's getContext() method: without installing the canvas npm package
+THREE.WebGLRenderer: Error creating WebGL context.
+
+stderr | src/sections/Services.test.jsx > Services Component > uses horizontal scroll animation
+Not implemented: HTMLCanvasElement's getContext() method: without installing the canvas npm package
+Not implemented: HTMLCanvasElement's getContext() method: without installing the canvas npm package
+THREE.WebGLRenderer: Error creating WebGL context.
+
+ ❯ src/sections/Services.test.jsx (8 tests | 8 failed) 1692ms
+   × Services Component > renders the section heading 908ms
+     → Error creating WebGL context.
+   × Services Component > renders all services from data 130ms
+     → Error creating WebGL context.
+   × Services Component > displays service IDs correctly 134ms
+     → Error creating WebGL context.
+   × Services Component > renders tech stack tags for each service 5ms
+     → Error creating WebGL context.
+   × Services Component > has the 3D services image 188ms
+     → Error creating WebGL context.
+   × Services Component > applies correct hover states 102ms
+     → Error creating WebGL context.
+   × Services Component > has no accessibility violations 131ms
+     → Error creating WebGL context.
+   × Services Component > uses horizontal scroll animation 92ms
+     → Error creating WebGL context.
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 8 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  src/sections/Services.test.jsx > Services Component > renders the section heading
+ FAIL  src/sections/Services.test.jsx > Services Component > renders all services from data
+ FAIL  src/sections/Services.test.jsx > Services Component > displays service IDs correctly
+ FAIL  src/sections/Services.test.jsx > Services Component > renders tech stack tags for each service
+ FAIL  src/sections/Services.test.jsx > Services Component > has the 3D services image
+ FAIL  src/sections/Services.test.jsx > Services Component > applies correct hover states
+ FAIL  src/sections/Services.test.jsx > Services Component > has no accessibility violations
+ FAIL  src/sections/Services.test.jsx > Services Component > uses horizontal scroll animation
+Error: Error creating WebGL context.
+ ❯ new WebGLRenderer node_modules/three/build/three.module.js:29123:13
+    29121|      } else {
+    29122| 
+    29123|       throw new Error( 'Error creating WebGL context.' );
+       |             ^
+    29124| 
+    29125|      }
+ ❯ src/components/ui/DottedSurface.jsx:30:22
+ ❯ Object.react_stack_bottom_frame node_modules/react-dom/cjs/react-dom-client.development.js:25989:20
+ ❯ runWithFiberInDEV node_modules/react-dom/cjs/react-dom-client.development.js:874:13
+ ❯ commitHookEffectListMount node_modules/react-dom/cjs/react-dom-client.development.js:13249:29
+ ❯ commitHookPassiveMountEffects node_modules/react-dom/cjs/react-dom-client.development.js:13336:11
+ ❯ commitPassiveMountOnFiber node_modules/react-dom/cjs/react-dom-client.development.js:15484:13
+ ❯ recursivelyTraversePassiveMountEffects node_modules/react-dom/cjs/react-dom-client.development.js:15439:11
+ ❯ commitPassiveMountOnFiber node_modules/react-dom/cjs/react-dom-client.development.js:15718:11
+ ❯ recursivelyTraversePassiveMountEffects node_modules/react-dom/cjs/react-dom-client.development.js:15439:11
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/8]⎯
+
+
+ Test Files  6 failed (6)
+      Tests  13 failed | 39 passed (52)
+   Start at  13:10:53
+   Duration  4.73s
+
+ FAIL  Tests failed. Watching for file changes...
+       press h to show help, press q to quit
+c[3J RERUN  src/components/ui/DottedSurface.jsx 
+
+ ❯ src/sections/Projects.test.jsx (7 tests | 1 failed) 20438ms
+   ✓ Projects Component > renders the section heading  4279ms
+   ✓ Projects Component > renders all projects from data  701ms
+   ✓ Projects Component > displays project images correctly  787ms
+   ✓ Projects Component > applies correct grid layout classes based on project size  1353ms
+   ✓ Projects Component > has hover effects on project cards  1488ms
+   × Projects Component > has no accessibility violations 11748ms
+     → Test timed out in 5000ms.
+If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".
+   ✓ Projects Component > renders visual decoration (primary line) 55ms
+ ❯ src/sections/Contact.test.jsx (10 tests | 1 failed) 15292ms
+   ✓ Contact Component > renders the heading  1819ms
+   ✓ Contact Component > displays the email link 188ms
+   ✓ Contact Component > renders all form fields with proper labels 31ms
+   × Contact Component > allows typing in form fields 6426ms
+     → Test timed out in 5000ms.
+If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".
+   ✓ Contact Component > has a submit button  1445ms
+   ✓ Contact Component > displays social media links 253ms
+   ✓ Contact Component > displays location information 63ms
+   ✓ Contact Component > has proper input types  779ms
+   ✓ Contact Component > has no accessibility violations  4022ms
+   ✓ Contact Component > displays copyright information 265ms
+ ❯ src/sections/About.test.jsx (10 tests | 1 failed) 13166ms
+   ✓ About Component > renders the section heading  4335ms
+   ✓ About Component > displays the philosophy text 39ms
+   ✓ About Component > renders all three pillars  607ms
+   ✓ About Component > displays pillar descriptions 253ms
+   ✓ About Component > has numbered pillars (01, 02, 03)  559ms
+   ✓ About Component > has the 3D philosophy image  753ms
+   ✓ About Component > applies light mode filter to image  635ms
+   ✓ About Component > has proper grid layout 47ms
+   × About Component > has no accessibility violations 5826ms
+     → Test timed out in 5000ms.
+If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".
+   ✓ About Component > applies hover effects to pillar cards 53ms
+ ❯ src/sections/Process.test.jsx (9 tests | 1 failed) 17446ms
+   ✓ Process Component > renders the section heading  1918ms
+   ✓ Process Component > renders all four process steps  1015ms
+   ✓ Process Component > displays step descriptions  805ms
+   ✓ Process Component > has numbered steps (01-04)  310ms
+   ✓ Process Component > has proper z-index for background numbers 197ms
+   ✓ Process Component > applies backdrop blur to prevent overlaps  1643ms
+   ✓ Process Component > has alternating layout for visual interest  372ms
+   × Process Component > has no accessibility violations 11100ms
+     → Test timed out in 5000ms.
+If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".
+   ✓ Process Component > applies hover effects 43ms
+ ❯ src/components/Footer.test.jsx (8 tests | 1 failed) 9275ms
+   ✓ Footer Component > renders the Ohtli logo  1102ms
+   ✓ Footer Component > displays all navigation links  433ms
+   ✓ Footer Component > has correct href attributes for navigation  1060ms
+   ✓ Footer Component > displays copyright information 205ms
+   ✓ Footer Component > has proper semantic structure 4ms
+   ✓ Footer Component > applies correct styling with black background 262ms
+   ✓ Footer Component > has uppercase tracking for links 203ms
+   × Footer Component > has no accessibility violations 5839ms
+     → Test timed out in 5000ms.
+If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".
+stderr | src/sections/Services.test.jsx > Services Component > renders the section heading
+Not implemented: HTMLCanvasElement's getContext() method: without installing the canvas npm package
+Not implemented: HTMLCanvasElement's getContext() method: without installing the canvas npm package
+
+ ✓ src/App.test.jsx (3 tests) 5847ms
+   ✓ Ohtli Landing Page > renders the App without crashing  4398ms
+   ✓ Ohtli Landing Page > renders the Navbar with correct links  459ms
+   ✓ Ohtli Landing Page > renders the Hero section with main slogan  616ms
+stderr | src/sections/Services.test.jsx > Services Component > renders all services from data
+Not implemented: HTMLCanvasElement's getContext() method: without installing the canvas npm package
+Not implemented: HTMLCanvasElement's getContext() method: without installing the canvas npm package
+
+stderr | src/sections/Services.test.jsx > Services Component > displays service IDs correctly
+Not implemented: HTMLCanvasElement's getContext() method: without installing the canvas npm package
+Not implemented: HTMLCanvasElement's getContext() method: without installing the canvas npm package
+
+stderr | src/sections/Services.test.jsx > Services Component > renders tech stack tags for each service
+Not implemented: HTMLCanvasElement's getContext() method: without installing the canvas npm package
+Not implemented: HTMLCanvasElement's getContext() method: without installing the canvas npm package
+
+stderr | src/sections/Services.test.jsx > Services Component > has the 3D services image
+Not implemented: HTMLCanvasElement's getContext() method: without installing the canvas npm package
+Not implemented: HTMLCanvasElement's getContext() method: without installing the canvas npm package
+
+stderr | src/sections/Services.test.jsx > Services Component > applies correct hover states
+Not implemented: HTMLCanvasElement's getContext() method: without installing the canvas npm package
+Not implemented: HTMLCanvasElement's getContext() method: without installing the canvas npm package
+
+stderr | src/sections/Services.test.jsx > Services Component > has no accessibility violations
+Not implemented: HTMLCanvasElement's getContext() method: without installing the canvas npm package
+Not implemented: HTMLCanvasElement's getContext() method: without installing the canvas npm package
+
+stderr | src/sections/Services.test.jsx > Services Component > uses horizontal scroll animation
+Not implemented: HTMLCanvasElement's getContext() method: without installing the canvas npm package
+Not implemented: HTMLCanvasElement's getContext() method: without installing the canvas npm package
+
+ ❯ src/sections/Services.test.jsx (8 tests | 1 failed) 14572ms
+   ✓ Services Component > renders the section heading  3269ms
+   ✓ Services Component > renders all services from data  806ms
+   ✓ Services Component > displays service IDs correctly  550ms
+   ✓ Services Component > renders tech stack tags for each service  578ms
+   ✓ Services Component > has the 3D services image  553ms
+   ✓ Services Component > applies correct hover states 223ms
+   × Services Component > has no accessibility violations 7795ms
+     → Test timed out in 5000ms.
+If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".
+   ✓ Services Component > uses horizontal scroll animation  595ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  src/sections/Services.test.jsx > Services Component > has no accessibility violations
+Error: Test timed out in 5000ms.
+If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".
+ ❯ src/sections/Services.test.jsx:67:3
+     65|   });
+     66| 
+     67|   it('has no accessibility violations', async () => {
+       |   ^
+     68|     const { container } = renderServices();
+     69|     const results = await axe(container);
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+
+ Test Files  6 failed | 1 passed (7)
+      Tests  6 failed | 49 passed (55)
+   Start at  13:11:24
+   Duration  51.19s
+
+ FAIL  Tests failed. Watching for file changes...
+       press h to show help, press q to quit
+c[3J RERUN  src/components/ui/DottedSurface.jsx 
+
+ ❯ src/sections/Projects.test.jsx (7 tests | 1 failed) 20438ms
+   ✓ Projects Component > renders the section heading  4279ms
+   ✓ Projects Component > renders all projects from data  701ms
+   ✓ Projects Component > displays project images correctly  787ms
+   ✓ Projects Component > applies correct grid layout classes based on project size  1353ms
+   ✓ Projects Component > has hover effects on project cards  1488ms
+   × Projects Component > has no accessibility violations 11748ms
+     → Test timed out in 5000ms.
+If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".
+   ✓ Projects Component > renders visual decoration (primary line) 55ms
+ ❯ src/sections/Contact.test.jsx (10 tests | 1 failed) 15292ms
+   ✓ Contact Component > renders the heading  1819ms
+   ✓ Contact Component > displays the email link 188ms
+   ✓ Contact Component > renders all form fields with proper labels 31ms
+   × Contact Component > allows typing in form fields 6426ms
+     → Test timed out in 5000ms.
+If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".
+   ✓ Contact Component > has a submit button  1445ms
+   ✓ Contact Component > displays social media links 253ms
+   ✓ Contact Component > displays location information 63ms
+   ✓ Contact Component > has proper input types  779ms
+   ✓ Contact Component > has no accessibility violations  4022ms
+   ✓ Contact Component > displays copyright information 265ms
+ ❯ src/sections/About.test.jsx (10 tests | 1 failed) 13166ms
+   ✓ About Component > renders the section heading  4335ms
+   ✓ About Component > displays the philosophy text 39ms
+   ✓ About Component > renders all three pillars  607ms
+   ✓ About Component > displays pillar descriptions 253ms
+   ✓ About Component > has numbered pillars (01, 02, 03)  559ms
+   ✓ About Component > has the 3D philosophy image  753ms
+   ✓ About Component > applies light mode filter to image  635ms
+   ✓ About Component > has proper grid layout 47ms
+   × About Component > has no accessibility violations 5826ms
+     → Test timed out in 5000ms.
+If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".
+   ✓ About Component > applies hover effects to pillar cards 53ms
+ ❯ src/sections/Process.test.jsx (9 tests | 1 failed) 17446ms
+   ✓ Process Component > renders the section heading  1918ms
+   ✓ Process Component > renders all four process steps  1015ms
+   ✓ Process Component > displays step descriptions  805ms
+   ✓ Process Component > has numbered steps (01-04)  310ms
+   ✓ Process Component > has proper z-index for background numbers 197ms
+   ✓ Process Component > applies backdrop blur to prevent overlaps  1643ms
+   ✓ Process Component > has alternating layout for visual interest  372ms
+   × Process Component > has no accessibility violations 11100ms
+     → Test timed out in 5000ms.
+If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".
+   ✓ Process Component > applies hover effects 43ms
+ ❯ src/components/Footer.test.jsx (8 tests | 1 failed) 9275ms
+   ✓ Footer Component > renders the Ohtli logo  1102ms
+   ✓ Footer Component > displays all navigation links  433ms
+   ✓ Footer Component > has correct href attributes for navigation  1060ms
+   ✓ Footer Component > displays copyright information 205ms
+   ✓ Footer Component > has proper semantic structure 4ms
+   ✓ Footer Component > applies correct styling with black background 262ms
+   ✓ Footer Component > has uppercase tracking for links 203ms
+   × Footer Component > has no accessibility violations 5839ms
+     → Test timed out in 5000ms.
+If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".
+stderr | src/sections/Services.test.jsx > Services Component > renders the section heading
+Not implemented: HTMLCanvasElement's getContext() method: without installing the canvas npm package
+Not implemented: HTMLCanvasElement's getContext() method: without installing the canvas npm package
+
+stderr | src/sections/Services.test.jsx > Services Component > renders all services from data
+Not implemented: HTMLCanvasElement's getContext() method: without installing the canvas npm package
+Not implemented: HTMLCanvasElement's getContext() method: without installing the canvas npm package
+
+stderr | src/sections/Services.test.jsx > Services Component > displays service IDs correctly
+Not implemented: HTMLCanvasElement's getContext() method: without installing the canvas npm package
+Not implemented: HTMLCanvasElement's getContext() method: without installing the canvas npm package
+
+stderr | src/sections/Services.test.jsx > Services Component > renders tech stack tags for each service
+Not implemented: HTMLCanvasElement's getContext() method: without installing the canvas npm package
+Not implemented: HTMLCanvasElement's getContext() method: without installing the canvas npm package
+
+ ✓ src/App.test.jsx (3 tests) 5064ms
+   ✓ Ohtli Landing Page > renders the App without crashing  3848ms
+   ✓ Ohtli Landing Page > renders the Navbar with correct links  447ms
+   ✓ Ohtli Landing Page > renders the Hero section with main slogan  695ms
+stderr | src/sections/Services.test.jsx > Services Component > has the 3D services image
+Not implemented: HTMLCanvasElement's getContext() method: without installing the canvas npm package
+Not implemented: HTMLCanvasElement's getContext() method: without installing the canvas npm package
+
+stderr | src/sections/Services.test.jsx > Services Component > applies correct hover states
+Not implemented: HTMLCanvasElement's getContext() method: without installing the canvas npm package
+Not implemented: HTMLCanvasElement's getContext() method: without installing the canvas npm package
+
+stderr | src/sections/Services.test.jsx > Services Component > has no accessibility violations
+Not implemented: HTMLCanvasElement's getContext() method: without installing the canvas npm package
+Not implemented: HTMLCanvasElement's getContext() method: without installing the canvas npm package
+
+stderr | src/sections/Services.test.jsx > Services Component > uses horizontal scroll animation
+Not implemented: HTMLCanvasElement's getContext() method: without installing the canvas npm package
+Not implemented: HTMLCanvasElement's getContext() method: without installing the canvas npm package
+
+ ❯ src/sections/Services.test.jsx (8 tests | 1 failed) 13687ms
+   ✓ Services Component > renders the section heading  1688ms
+   ✓ Services Component > renders all services from data  1262ms
+   ✓ Services Component > displays service IDs correctly 209ms
+   ✓ Services Component > renders tech stack tags for each service  1195ms
+   ✓ Services Component > has the 3D services image  785ms
+   ✓ Services Component > applies correct hover states  445ms
+   × Services Component > has no accessibility violations 7776ms
+     → Test timed out in 5000ms.
+If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".
+   ✓ Services Component > uses horizontal scroll animation  323ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  src/sections/Services.test.jsx > Services Component > has no accessibility violations
+Error: Test timed out in 5000ms.
+If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".
+ ❯ src/sections/Services.test.jsx:67:3
+     65|   });
+     66| 
+     67|   it('has no accessibility violations', async () => {
+       |   ^
+     68|     const { container } = renderServices();
+     69|     const results = await axe(container);
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+
+ Test Files  6 failed | 1 passed (7)
+      Tests  6 failed | 49 passed (55)
+   Start at  13:12:36
+   Duration  48.59s
+
+ FAIL  Tests failed. Watching for file changes...
+       press h to show help, press q to quit
+c[3J RERUN  src/components/ui/DottedSurface.jsx 
+
+ ❯ src/sections/Projects.test.jsx (7 tests | 1 failed) 20438ms
+   ✓ Projects Component > renders the section heading  4279ms
+   ✓ Projects Component > renders all projects from data  701ms
+   ✓ Projects Component > displays project images correctly  787ms
+   ✓ Projects Component > applies correct grid layout classes based on project size  1353ms
+   ✓ Projects Component > has hover effects on project cards  1488ms
+   × Projects Component > has no accessibility violations 11748ms
+     → Test timed out in 5000ms.
+If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".
+   ✓ Projects Component > renders visual decoration (primary line) 55ms
+ ❯ src/sections/Contact.test.jsx (10 tests | 1 failed) 15292ms
+   ✓ Contact Component > renders the heading  1819ms
+   ✓ Contact Component > displays the email link 188ms
+   ✓ Contact Component > renders all form fields with proper labels 31ms
+   × Contact Component > allows typing in form fields 6426ms
+     → Test timed out in 5000ms.
+If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".
+   ✓ Contact Component > has a submit button  1445ms
+   ✓ Contact Component > displays social media links 253ms
+   ✓ Contact Component > displays location information 63ms
+   ✓ Contact Component > has proper input types  779ms
+   ✓ Contact Component > has no accessibility violations  4022ms
+   ✓ Contact Component > displays copyright information 265ms
+ ❯ src/sections/About.test.jsx (10 tests | 1 failed) 13166ms
+   ✓ About Component > renders the section heading  4335ms
+   ✓ About Component > displays the philosophy text 39ms
+   ✓ About Component > renders all three pillars  607ms
+   ✓ About Component > displays pillar descriptions 253ms
+   ✓ About Component > has numbered pillars (01, 02, 03)  559ms
+   ✓ About Component > has the 3D philosophy image  753ms
+   ✓ About Component > applies light mode filter to image  635ms
+   ✓ About Component > has proper grid layout 47ms
+   × About Component > has no accessibility violations 5826ms
+     → Test timed out in 5000ms.
+If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".
+   ✓ About Component > applies hover effects to pillar cards 53ms
+ ❯ src/sections/Process.test.jsx (9 tests | 1 failed) 17446ms
+   ✓ Process Component > renders the section heading  1918ms
+   ✓ Process Component > renders all four process steps  1015ms
+   ✓ Process Component > displays step descriptions  805ms
+   ✓ Process Component > has numbered steps (01-04)  310ms
+   ✓ Process Component > has proper z-index for background numbers 197ms
+   ✓ Process Component > applies backdrop blur to prevent overlaps  1643ms
+   ✓ Process Component > has alternating layout for visual interest  372ms
+   × Process Component > has no accessibility violations 11100ms
+     → Test timed out in 5000ms.
+If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".
+   ✓ Process Component > applies hover effects 43ms
+ ❯ src/components/Footer.test.jsx (8 tests | 1 failed) 9275ms
+   ✓ Footer Component > renders the Ohtli logo  1102ms
+   ✓ Footer Component > displays all navigation links  433ms
+   ✓ Footer Component > has correct href attributes for navigation  1060ms
+   ✓ Footer Component > displays copyright information 205ms
+   ✓ Footer Component > has proper semantic structure 4ms
+   ✓ Footer Component > applies correct styling with black background 262ms
+   ✓ Footer Component > has uppercase tracking for links 203ms
+   × Footer Component > has no accessibility violations 5839ms
+     → Test timed out in 5000ms.
+If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".
+stderr | src/sections/Services.test.jsx > Services Component > renders the section heading
+Not implemented: HTMLCanvasElement's getContext() method: without installing the canvas npm package
+Not implemented: HTMLCanvasElement's getContext() method: without installing the canvas npm package
+
+ ✓ src/App.test.jsx (3 tests) 6322ms
+   ✓ Ohtli Landing Page > renders the App without crashing  5044ms
+   ✓ Ohtli Landing Page > renders the Navbar with correct links  470ms
+   ✓ Ohtli Landing Page > renders the Hero section with main slogan  776ms
+stderr | src/sections/Services.test.jsx > Services Component > renders all services from data
+Not implemented: HTMLCanvasElement's getContext() method: without installing the canvas npm package
+Not implemented: HTMLCanvasElement's getContext() method: without installing the canvas npm package
+
+stderr | src/sections/Services.test.jsx > Services Component > displays service IDs correctly
+Not implemented: HTMLCanvasElement's getContext() method: without installing the canvas npm package
+Not implemented: HTMLCanvasElement's getContext() method: without installing the canvas npm package
+
+stderr | src/sections/Services.test.jsx > Services Component > renders tech stack tags for each service
+Not implemented: HTMLCanvasElement's getContext() method: without installing the canvas npm package
+Not implemented: HTMLCanvasElement's getContext() method: without installing the canvas npm package
+
+stderr | src/sections/Services.test.jsx > Services Component > has the 3D services image
+Not implemented: HTMLCanvasElement's getContext() method: without installing the canvas npm package
+Not implemented: HTMLCanvasElement's getContext() method: without installing the canvas npm package
+
+stderr | src/sections/Services.test.jsx > Services Component > applies correct hover states
+Not implemented: HTMLCanvasElement's getContext() method: without installing the canvas npm package
+Not implemented: HTMLCanvasElement's getContext() method: without installing the canvas npm package
+
+stderr | src/sections/Services.test.jsx > Services Component > has no accessibility violations
+Not implemented: HTMLCanvasElement's getContext() method: without installing the canvas npm package
+Not implemented: HTMLCanvasElement's getContext() method: without installing the canvas npm package
+
+stderr | src/sections/Services.test.jsx > Services Component > uses horizontal scroll animation
+Not implemented: HTMLCanvasElement's getContext() method: without installing the canvas npm package
+Not implemented: HTMLCanvasElement's getContext() method: without installing the canvas npm package
+
+ ❯ src/sections/Services.test.jsx (8 tests | 1 failed) 12103ms
+   ✓ Services Component > renders the section heading  3356ms
+   ✓ Services Component > renders all services from data  958ms
+   ✓ Services Component > displays service IDs correctly  663ms
+   ✓ Services Component > renders tech stack tags for each service  1010ms
+   ✓ Services Component > has the 3D services image  732ms
+   ✓ Services Component > applies correct hover states 130ms
+   × Services Component > has no accessibility violations 5161ms
+     → Test timed out in 5000ms.
+If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".
+   ✓ Services Component > uses horizontal scroll animation 42ms
+
+⎯⎯⎯⎯⎯⎯⎯ Failed Tests 1 ⎯⎯⎯⎯⎯⎯⎯
+
+ FAIL  src/sections/Services.test.jsx > Services Component > has no accessibility violations
+Error: Test timed out in 5000ms.
+If this is a long-running test, pass a timeout value as the last argument or configure it globally with "testTimeout".
+ ❯ src/sections/Services.test.jsx:67:3
+     65|   });
+     66| 
+     67|   it('has no accessibility violations', async () => {
+       |   ^
+     68|     const { container } = renderServices();
+     69|     const results = await axe(container);
+
+⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯⎯[1/1]⎯
+
+
+ Test Files  6 failed | 1 passed (7)
+      Tests  6 failed | 49 passed (55)
+   Start at  13:13:21
+   Duration  57.47s
+
+ FAIL  Tests failed. Watching for file changes...
+       press h to show help, press q to quit

@@ -3,10 +3,19 @@ import { describe, it, expect } from 'vitest';
 import { axe } from 'jest-axe';
 import Services from './Services';
 import { services } from '../data/services';
+import { ThemeProvider } from '../context/ThemeContext';
+
+const renderServices = () => {
+  return render(
+    <ThemeProvider>
+      <Services />
+    </ThemeProvider>
+  );
+};
 
 describe('Services Component', () => {
   it('renders the section heading', () => {
-    render(<Services />);
+    renderServices();
     expect(screen.getByText('Nuestros Servicios')).toBeInTheDocument();
     // "Experiencias" and "Digitales" appear in the heading
     const experiencias = screen.getAllByText(/Experiencias/i);
@@ -16,7 +25,7 @@ describe('Services Component', () => {
   });
 
   it('renders all services from data', () => {
-    render(<Services />);
+    renderServices();
     
     services.forEach(service => {
       expect(screen.getByText(service.title)).toBeInTheDocument();
@@ -25,7 +34,7 @@ describe('Services Component', () => {
   });
 
   it('displays service IDs correctly', () => {
-    render(<Services />);
+    renderServices();
     
     services.forEach(service => {
       const idElements = screen.getAllByText(service.id);
@@ -34,7 +43,7 @@ describe('Services Component', () => {
   });
 
   it('renders tech stack tags for each service', () => {
-    render(<Services />);
+    renderServices();
     
     services.forEach(service => {
       service.tech.forEach(tech => {
@@ -44,25 +53,25 @@ describe('Services Component', () => {
   });
 
   it('has the 3D services image', () => {
-    render(<Services />);
+    renderServices();
     const image = screen.getByAltText('Services 3D Object');
     expect(image).toBeInTheDocument();
   });
 
   it('applies correct hover states', () => {
-    const { container } = render(<Services />);
+    const { container } = renderServices();
     const serviceCards = container.querySelectorAll('.group');
     expect(serviceCards.length).toBeGreaterThan(0);
   });
 
   it('has no accessibility violations', async () => {
-    const { container } = render(<Services />);
+    const { container } = renderServices();
     const results = await axe(container);
     expect(results).toHaveNoViolations();
   });
 
   it('uses horizontal scroll animation', () => {
-    const { container } = render(<Services />);
+    const { container } = renderServices();
     const scrollContainer = container.querySelector('[style*="x"]');
     expect(scrollContainer).toBeInTheDocument();
   });

@@ -11,6 +11,14 @@ export function DottedSurface({ className, ...props }) {
   useEffect(() => {
     if (!containerRef.current) return;
 
+    // Check if WebGL is available (not in test environment)
+    const canvas = document.createElement('canvas');
+    const gl = canvas.getContext('webgl') || canvas.getContext('experimental-webgl');
+    if (!gl) {
+      // WebGL not available (test environment), skip Three.js rendering
+      return;
+    }
+
     const SEPARATION = 150;
     const AMOUNTX = 40;
     const AMOUNTY = 60;
@@ -65,12 +73,12 @@ export function DottedSurface({ className, ...props }) {
     );
     geometry.setAttribute('color', new THREE.Float32BufferAttribute(colors, 3));
 
-    // Create material
+    // Create material with enhanced visibility
     const material = new THREE.PointsMaterial({
-      size: 8,
+      size: 12, // Increased from 8 for better visibility
       vertexColors: true,
       transparent: true,
-      opacity: 0.8,
+      opacity: 0.9, // Increased from 0.8
       sizeAttenuation: true,
     });
 
@@ -93,10 +101,11 @@ export function DottedSurface({ className, ...props }) {
         for (let iy = 0; iy < AMOUNTY; iy++) {
           const index = i * 3;
 
-          // Animate Y position with sine waves
+          // Enhanced wave animation with more pronounced movement
           positions[index + 1] =
-            Math.sin((ix + count) * 0.3) * 50 +
-            Math.sin((iy + count) * 0.5) * 50;
+            Math.sin((ix + count) * 0.3) * 80 +
+            Math.sin((iy + count) * 0.5) * 80 +
+            Math.cos((ix * iy + count) * 0.1) * 40;
 
           i++;
         }
@@ -104,7 +113,7 @@ export function DottedSurface({ className, ...props }) {
 
       positionAttribute.needsUpdate = true;
       renderer.render(scene, camera);
-      count += 0.1;
+      count += 0.08; // Slightly slower for smoother wave motion
     };
 
     // Handle window resize
