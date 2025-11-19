@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 import * as THREE from "three";
 import { useTheme } from "../../context/ThemeContext";
 import { cn } from "../../lib/utils";
@@ -98,13 +98,15 @@ export function DottedSurface({ className, ...props }: DottedSurfaceProps) {
     scene.add(points);
 
     let count = 0;
-    let animationId: number;
+    let animationId: number = 0;
 
     // Animation function
     const animate = () => {
       animationId = requestAnimationFrame(animate);
 
       const positionAttribute = geometry.attributes.position;
+      if (!positionAttribute) return;
+
       const positions = positionAttribute.array as Float32Array;
 
       let i = 0;
@@ -122,7 +124,9 @@ export function DottedSurface({ className, ...props }: DottedSurfaceProps) {
         }
       }
 
-      positionAttribute.needsUpdate = true;
+      if (positionAttribute) {
+        positionAttribute.needsUpdate = true;
+      }
       renderer.render(scene, camera);
       count += 0.08;
     };

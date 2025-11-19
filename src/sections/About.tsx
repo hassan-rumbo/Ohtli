@@ -1,4 +1,3 @@
-import React from 'react';
 import Section from '../components/Section';
 import { motion } from 'framer-motion';
 import { Search, PenTool, Code2, Quote } from 'lucide-react';
