@@ -1,46 +1,34 @@
-import React, { Suspense } from 'react';
-import { HelmetProvider, Helmet } from 'react-helmet-async';
+import React, { useEffect } from 'react';
 import Navbar from './components/Navbar';
 import Hero from './sections/Hero';
+import About from './sections/About';
+import Services from './sections/Services';
+import Projects from './sections/Projects';
+import Process from './sections/Process';
+import Technologies from './sections/Technologies';
+import Testimonials from './sections/Testimonials';
+import Contact from './sections/Contact';
 import Footer from './components/Footer';
-
-// Lazy load sections for performance
-const About = React.lazy(() => import('./sections/About'));
-const Services = React.lazy(() => import('./sections/Services'));
-const Projects = React.lazy(() => import('./sections/Projects'));
-const Process = React.lazy(() => import('./sections/Process'));
-const Technologies = React.lazy(() => import('./sections/Technologies'));
-const Testimonials = React.lazy(() => import('./sections/Testimonials'));
-const Contact = React.lazy(() => import('./sections/Contact'));
-
-// Loading fallback
-const Loading = () => (
-  <div className="flex items-center justify-center min-h-[50vh] bg-background text-white">
-    <div className="w-8 h-8 border-2 border-white/20 border-t-white rounded-full animate-spin" />
-  </div>
-);
-
 import ErrorBoundary from './components/ErrorBoundary';
 import { ThemeProvider } from './context/ThemeContext';
+import './App.css';
 
 function App() {
+  // Set document title
+  useEffect(() => {
+    document.title = 'Ohtli - Extra Premium Landing Page';
+  }, []);
+
   return (
     <ErrorBoundary>
       <ThemeProvider>
-        <HelmetProvider>
-          <div className="bg-background min-h-screen text-[var(--color-text)] selection:bg-primary/30 transition-colors duration-500 relative">
-            <div className="noise-bg"></div>
-        <Helmet>
-          <title>Ohtli | Boutique Software Studio</title>
-          <meta name="description" content="Fusionamos tecnología y arte. Agencia de desarrollo de software boutique especializada en experiencias digitales inmersivas." />
-          <meta name="theme-color" content="#050505" />
-        </Helmet>
-
-        <main>
-          <Hero />
-          <Navbar />
+        <div className="min-h-screen bg-background text-white font-sans">
+          {/* Noise texture overlay */}
+          <div className="noise-bg" />
           
-          <Suspense fallback={<Loading />}>
+          <Navbar />
+          <main>
+            <Hero />
             <About />
             <Services />
             <Projects />
@@ -48,13 +36,10 @@ function App() {
             <Technologies />
             <Testimonials />
             <Contact />
-          </Suspense>
-        </main>
-        
-        <Footer />
-      </div>
-      </HelmetProvider>
-    </ThemeProvider>
+          </main>
+          <Footer />
+        </div>
+      </ThemeProvider>
     </ErrorBoundary>
   );
 }
